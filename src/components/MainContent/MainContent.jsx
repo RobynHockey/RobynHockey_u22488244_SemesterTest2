@@ -3,6 +3,7 @@ import "./MainContent.css";
 import ThreeDModel from "../Model/3DModel"; // simple import
 import BaseMapToggle from "../BaseMapToggle"; // import the new buttons
 import LayersToggle from "../LayersToggle";
+import ThreeDViewer from "../ThreeDViewer";
 
 const MainContent = () => {
   return (
@@ -17,6 +18,10 @@ const MainContent = () => {
 
       <div className="model-container">
         <ThreeDModel/>
+
+        <div className="App">
+      <ThreeDViewer />
+    </div>
         
       </div>
     </main>
